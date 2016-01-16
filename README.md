@@ -10,9 +10,11 @@
 -  ydl.sh http://v.youku.com/v_show/id_XODE3NjYxODM2.html
 
 
+
 - 2. Put all URL links to a file for bath download
-- ydl.sh /path/to/url.list.txt
+-  ydl.sh /path/to/url.list.txt
+
 
 
 - 3. Install or update the youtube-dl
-- ydl.sh -u
+-  ydl.sh -u
