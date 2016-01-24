@@ -1,7 +1,7 @@
 #! /bin/bash
 #Author: kashu
 #My Website: https://kashu.org
-#Date: 2015-07-31
+#Date: 2016-01-25
 #Filename: ydl.sh
 #Description: use youtube-dl to download videos
 #youtube-dl official website: http://rg3.github.io/youtube-dl/
