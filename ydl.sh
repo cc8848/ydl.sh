@@ -1,7 +1,7 @@
 #! /bin/bash
 #Author: kashu
 #My Website: https://kashu.org
-#Date: 2016-01-25
+#Date: 2015-07-31
 #Filename: ydl.sh
 #Description: use youtube-dl to download videos
 #youtube-dl official website: http://rg3.github.io/youtube-dl/
@@ -19,7 +19,8 @@ UPDATE(){
 TMP_YTB=/tmp/youtube_dl.`date +%Y%m%d`
 
 # 1) Download the latest youtube-dl to /tmp directory through Lantern Proxy
-export http_proxy=http://127.0.0.1:8787/
+export http_proxy=http://127.0.0.1:8787
+export https_proxy=https://127.0.0.1:8787
 #wget --no-check-certificate `wget --no-check-certificate -qO - https://rg3.github.io/youtube-dl/download.html|\
 #grep 'youtube-dl -O ' -|sed 's/\(.*\)\(http.*dl\ \)\(.*\)/\2/g'` -O $TMP_YTB
 wget --no-check-certificate https://yt-dl.org/downloads/latest/youtube-dl -O $TMP_YTB
@@ -32,7 +33,7 @@ wget --no-check-certificate https://yt-dl.org/downloads/latest/youtube-dl -O $TM
 
 # Check if the youtube-dl is there or is up-to-date
 if [ ! -s "$TMP_YTB" ]; then echo -e "\033[41;37myoutube-dl download failed\033[0m!  http://rg3.github.io/youtube-dl/download.html" && exit 1; fi
-if [ "`md5sum /tmp/youtube-dl.$(date +%Y%m%d) $(which youtube-dl)|cut -d' ' -f1|uniq|wc -l`" -ne "1" -o ! -e "$YTB" ]; then
+if [ "`md5sum /tmp/youtube_dl.$(date +%Y%m%d) $(which youtube-dl)|cut -d' ' -f1|uniq|wc -l`" -ne "1" -o ! -e "$YTB" ]; then
 	sudo mv $TMP_YTB $YTB && sudo chmod a+x $YTB
 fi
 test -x $YTB && echo "Great, $YTB is up-to-date!" || { echo "Update failed"; exit 5; }
