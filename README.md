@@ -3,6 +3,7 @@
 ##Usage:
 - ydl.sh URL
 - ydl.sh url_list_file.txt
+- ydl.sh -u
 
 
 ##e.g.
@@ -16,6 +17,3 @@
 
 #### 3. Install or update the youtube-dl
 * ydl.sh -u
-
-
-#### 脚本能运行于且不限于在Xubuntu、Debian、RHEL/CentOS/Fedora等发行版上运行
