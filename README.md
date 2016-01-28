@@ -1,14 +1,14 @@
-#Use youtube-dl to download videos
+# Use youtube-dl to download videos
 
-##Usage:
+## Usage:
 - ydl.sh URL
 - ydl.sh url_list_file.txt
 - ydl.sh -u
 
 
-##e.g.
+## e.g.
 #### 1. Download from an URL link
-* ydl.sh http://v.youku.com/v_show/id_XODE3NjYxODM2.html
+* ydl.sh http://v.youku.com/v_show/id_XMTQzMTY3MjE0OA==.html
 
 
 #### 2. Put all URL links to a file for bath download
@@ -19,5 +19,5 @@
 * ydl.sh -u
 
 
-##More:
+## More:
 https://github.com/kashu/merge.videos
