@@ -11,7 +11,7 @@
 * ydl.sh http://v.youku.com/v_show/id_XMTQzMTY3MjE0OA==.html
 
 
-#### 2. Put all URL links to a file for bath download
+#### 2. File containing URLs to download
 * ydl.sh /path/to/url.list.txt
 
 
